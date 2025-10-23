@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Läskigt</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <script 
+        src="https://kit.fontawesome.com/94f8ad4860.js"
+        crossorigin="anonymous">
+    </script>
+    <link rel="shortcut icon" href="pumpkin.png" type="image/x-icon">
 </head>
 <body>
-    
+    <audio id="ghost">
+        <source src="ghost.mp3" type="audio/mpeg">
+    </audio>
+    <h1 class="gradienttext">Välkommen till en <span class="red">läskig</span> sida</h1>
+
+    <h2 class="gradienttext">Jag tipsar, tryck <span class="red">INTE</span> på den stirrande mannen</h2>
+    <div class="images">
+        <img 
+        src="ghost.png"
+        onclick="Audio(document.getElementById('ghost'))">
+        <img id="scaryguy" src="death-stare.png">
+        <img src="pump.png">
+        <img class="jumpscare" src="läskman.png">
+    </div>
 </body>
+
+<script>
+    function Audio(audioElement) {
+        audioElement.play()
+    }
+</script>
+
 </html>

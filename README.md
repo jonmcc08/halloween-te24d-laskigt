@@ -1,1 +1,1 @@
-"# halloween-te24d-laskigt" 
+VARNING! SKIT LÄSKIGT INNEHÅLL!

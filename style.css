@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Jersey+25&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    background-image: url("pexels-pixabay-162389.jpg");
+    background-size: cover;
+}
+
+.red {
+    color: red;
+}
+
+.gradienttext {
+    background-image: linear-gradient(orange, rgb(121, 79, 0));
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-family: "Eater", sans-serif;
+}
+
+h1 {
+    font-size: 10px;
+    animation: size 10s, glow 10s infinite;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    position: absolute;
+    width: 99%;
+    text-align: center;
+    top: 300px;
+    font-size: 20px;
+}
+
+.images {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 50px;
+    width: 99%;
+}
+
+img {
+    width: 300px;
+}
+
+#scaryguy {
+    width: 100px;
+}
+
+#scaryguy:active ~ .jumpscare {
+    display: block;    
+}
+
+.jumpscare {
+    display: none;
+    position: absolute;
+    bottom: -100;
+    width: 100%;
+}
+
+
+@keyframes size {
+    100% {
+        font-size: 50px;
+    }
+}
+
+@keyframes glow {
+    50% {
+        text-shadow: 0 0 10px rgb(98, 78, 0);
+    }
+}
